@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+}
+
+/* Used to resize image for larger screens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    body {
+        background-color: red;
+        transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+    }
+
+    img {
+        width: 60%; /* Resize image */
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: green;
+        transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+    }
+
+    img {
+        width: 70%; /* Used to resize image */
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: blue;
+        transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+    }
+
+    img {
+        width: 80%; /* Used to resize image */
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        background-color: yellow;
+        transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+    }
+
+    img {
+        display: none; /* Used to hide the image */
+    }
+}
